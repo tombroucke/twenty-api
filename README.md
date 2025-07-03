@@ -95,3 +95,24 @@ var_dump(
     $response->data()
 );
 ```
+
+### Metadata
+
+```php
+<?php
+
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+$connector = new \Otomaties\Twenty\TwentyConnector(
+    apiKey: 'xxx',
+    baseUri: 'https://example.com'
+);
+
+$request = new \Otomaties\Twenty\Metadata\ObjectsRequest();
+
+$response = $connector->send($request);
+
+var_dump(
+    $response->data()
+);
+```
