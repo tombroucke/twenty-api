@@ -27,7 +27,10 @@ $response->headers(): array;
 ### Requests
 
 There are currently 6 types of requests: `CreateManyObjectsRequest`, `CreateObjectRequest`, `DeleteObjectRequest`, `FindManyObjectsRequest`, `FindObjectRequest` and `UpdateObjectRequest`.
-As a convention, the **first argument** of the constructor is always the **object's API Name**. In requests to endpoints for single objects, the **next argument** is the **object ID**. In POST requests (`CreateManyObjectsRequest`, `CreateObjectRequest`, `UpdateObjectRequest`), the **next argument** is the **post body**. The **next arguments** can be query parameters. For readability, you can use named arguments.
+
+As a convention, the **first argument** of the constructor is always the **object's API Name**. 
+
+In requests to endpoints for single objects, the **next argument** is the **object ID**. In POST requests (`CreateManyObjectsRequest`, `CreateObjectRequest`, `UpdateObjectRequest`), the **next argument** is the **post body**. The **next arguments** can be query parameters. For readability, you can use named arguments.
 
 ```php
 new \Otomaties\Twenty\FindManyObjectsRequest(
