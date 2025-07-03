@@ -3,8 +3,7 @@
   "description": "REST API connector for twenty CRM",
   "type": "library",
   "require": {
-    "fansipan/fansipan": "1",
-    "guzzlehttp/guzzle": "^7.9"
+    "fansipan/fansipan": "1"
   },
   "autoload": {
     "psr-4": {

@@ -3,9 +3,8 @@
 namespace Otomaties\Twenty;
 
 use Fansipan\Contracts\ConnectorInterface;
+use Fansipan\Middleware\Auth\BearerAuthentication;
 use Fansipan\Traits\ConnectorTrait;
-use GuzzleHttp\Client;
-use Psr\Http\Client\ClientInterface;
 
 final class TwentyConnector implements ConnectorInterface
 {
@@ -21,13 +20,10 @@ final class TwentyConnector implements ConnectorInterface
         return rtrim($this->baseUri, '/').'/';
     }
 
-    protected function defaultClient(): ClientInterface
+    protected function defaultMiddleware(): array
     {
-        return new Client([
-            'timeout' => 10,
-            'headers' => [
-                'Authorization' => 'Bearer '.$this->apiKey,
-            ],
-        ]);
+        return [
+            new BearerAuthentication($this->apiKey),
+        ];
     }
 }
