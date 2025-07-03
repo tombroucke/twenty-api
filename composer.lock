@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5beb970d1908f747b5a0dffcbf35f125",
+    "content-hash": "8a6552b1466234628e7b2c60ac04b39b",
     "packages": [
         {
             "name": "fansipan/fansipan",
-            "version": "1.0.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phanxipang/fansipan.git",
-                "reference": "b0c8469da71aaf31644878504e098796b9a2ed66"
+                "reference": "c356b281cb82a08cc2c2c4290229e262d6d61673"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phanxipang/fansipan/zipball/b0c8469da71aaf31644878504e098796b9a2ed66",
-                "reference": "b0c8469da71aaf31644878504e098796b9a2ed66",
+                "url": "https://api.github.com/repos/phanxipang/fansipan/zipball/c356b281cb82a08cc2c2c4290229e262d6d61673",
+                "reference": "c356b281cb82a08cc2c2c4290229e262d6d61673",
                 "shasum": ""
             },
             "require": {
@@ -74,9 +74,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phanxipang/fansipan/issues",
-                "source": "https://github.com/phanxipang/fansipan/tree/1.0.0"
+                "source": "https://github.com/phanxipang/fansipan/tree/1.4.0"
             },
-            "time": "2024-02-01T04:36:45+00:00"
+            "time": "2025-06-14T16:37:45+00:00"
         },
         {
             "name": "php-http/discovery",
